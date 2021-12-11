@@ -1,7 +1,14 @@
 import React from 'react'
+import QuoteForm from '../components/quotes/QuoteForm';
+
 
 const NewQuote = () => {
-    return <h1>New Quotes Page</h1>
+
+    const addQuoteHandler = QuoteData => {
+        console.log(QuoteData);
+    };
+
+    return <QuoteForm onAddQuote={addQuoteHandler}/>
 }
 
 export default NewQuote;
